@@ -51,7 +51,7 @@
 
     internal static class PublisherWithEventArguments
     {
-        public static event EventHandler<CustomArgs>? OnFinishedPickingRandomNumber; // Declare the event (aside note: EventHandler is a generic delegate)
+        public static event EventHandler<CustomArgs>? OnFinishedPickingRandomNumber; // Declare the event with the generic EventHandler<T> type
         // We declare the event as nullable (?) because it might be that nobody subscribed to the event
 
         public static void PickRandomNumer(int waitTime)
